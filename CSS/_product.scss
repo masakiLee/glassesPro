@@ -1,0 +1,225 @@
+.nav {
+    @include pad {
+        .container {
+            padding: 0;
+        }
+    }
+
+    @include mobile {
+        .container {
+            padding: 0;
+        }
+    }
+
+    ul {
+        display: flex;
+
+
+        li {
+            width: 33.33%;
+            border: 1px solid #DCDCDC;
+            border-top: none;
+            // border-bottom: none;
+
+            a {
+                display: block;
+                font-size: 32px;
+                text-align: center;
+                border-bottom: 8px solid transparent;
+                padding: 24px 0 16px;
+                font-weight: 500;
+
+                @include pad {
+                    font-size: 24px;
+                    padding: 16px 0 8px;
+                }
+
+                @include mobile {
+                    font-size: 16px;
+                    padding: 16px 0 8px;
+                }
+
+                &:hover {
+                    border-bottom: 8px solid #AA0601;
+                }
+
+            }
+
+            .show {
+                border-bottom: 8px solid #AA0601;
+
+            }
+        }
+    }
+}
+
+.proHeader {
+    display: flex;
+    justify-content: center;
+
+    @include pad {
+        padding-bottom: 40px;
+    }
+
+    .proImg {
+        width: 50%;
+    }
+
+    .one {
+        height: 296px;
+        background: url(../upload/product-header-1.png) no-repeat center center;
+        background-size: cover;
+
+        @include pad {
+            background: url(../upload/product-header-sm-1.png) no-repeat center center;
+            background-size: cover;
+        }
+
+        @include mobile {
+            height: 136px;
+            background: url(../upload/product-header-sm-1.png) no-repeat center center;
+            background-size: cover;
+        }
+    }
+
+    .two {
+        height: 296px;
+        background: url(../upload/product-header-2.png) no-repeat center center;
+        background-size: cover;
+
+        @include pad {
+            background: url(../upload/product-header-sm-2.png) no-repeat center center;
+            background-size: cover;
+        }
+
+        @include mobile {
+            height: 136px;
+            background: url(../upload/product-header-sm-2.png) no-repeat center center;
+            background-size: cover;
+        }
+    }
+}
+
+.proOptical {
+    text-align: center;
+
+    @include pad {
+        .container {
+            padding: 0 36px;
+        }
+    }
+
+    @include mobile {
+        .container {
+            padding: 0 14px 0 13px;
+        }
+    }
+
+    .protitle {
+        @include mobile {
+            font-size: 24px;
+        }
+    }
+
+    .secondary-title {
+        @include mobile {
+            padding-bottom: 24px;
+        }
+    }
+
+    .proOpticalMain {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-right: -12px;
+        margin-left: -12px;
+
+        .proCard {
+            width: 25%;
+            padding: 0 12px;
+            margin-bottom: 80px;
+
+            @include pad {
+                width: 50%;
+                margin-bottom: 40px;
+            }
+
+            @include mobile {
+                width: 100%;
+                margin-bottom: 24px;
+            }
+
+            .proCardBody {
+                display: flex;
+                justify-content: space-between;
+                line-height: 36px;
+            }
+
+            .proColor {
+                display: flex;
+
+                .proColorImg {
+                    width: 24px;
+                    height: 24px;
+                    margin-right: 8px;
+                }
+
+                .purple {
+                    background-color: #5F3E2D;
+                    border-radius: 4px;
+                }
+
+                .coffee {
+                    background-color: #B75929;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+}
+
+.page {
+    @include pad {
+        padding-top: 40px;
+    }
+
+    @include mobile {
+        padding-top: 40px;
+        padding-bottom: 64px;
+    }
+
+    .pageLine {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        li {
+            border: 1px solid #555555;
+
+            a {
+                display: block;
+                color: #555555;
+                font-size: 18px;
+
+                @include mobile {
+                    font-size: 16px;
+                }
+
+                &:hover {
+                    background-color: #000;
+                    color: #fff;
+                }
+            }
+
+            .up,
+            .down {
+                padding: 9px 12px;
+            }
+
+            .pageNum {
+                padding: 9px 16px;
+            }
+        }
+    }
+}

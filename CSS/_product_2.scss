@@ -1,0 +1,116 @@
+.proHeader {
+
+    .three {
+        height: 296px;
+        background: url(../upload/product-header-3.png) no-repeat center;
+        background-size: cover;
+
+        @include pad {
+            background: url(../upload/product-header-sm-3.png) no-repeat center center;
+            background-size: cover;
+        }
+
+        @include mobile {
+            height: 136px;
+            background: url(../upload/product-header-sm-3.png) no-repeat center center;
+            background-size: cover;
+        }
+    }
+
+    .fore {
+        height: 296px;
+        background: url(../upload/product-header-4.png) no-repeat center;
+        background-size: cover;
+
+        @include pad {
+            background: url(../upload/product-header-sm-4.png) no-repeat center center;
+            background-size: cover;
+        }
+
+        @include mobile {
+            height: 136px;
+            background: url(../upload/product-header-sm-4.png) no-repeat center center;
+            background-size: cover;
+        }
+    }
+}
+
+.proSun {
+    text-align: center;
+
+    @include pad {
+        .container {
+            padding: 0 36px;
+        }
+    }
+
+    @include mobile {
+        .container {
+            padding: 0 14px 0 13px;
+        }
+    }
+
+    .protitle {
+        @include mobile {
+            font-size: 24px;
+        }
+    }
+
+    .secondary-title {
+        @include mobile {
+            padding-bottom: 24px;
+            font-size: 24px;
+        }
+    }
+
+    .proSunMain {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-right: -12px;
+        margin-left: -12px;
+
+        .proCard {
+            width: 33.33%;
+            padding: 0 12px;
+            margin-bottom: 80px;
+
+            @include pad {
+                width: 50%;
+                margin-bottom: 40px;
+            }
+
+            @include mobile {
+                width: 100%;
+                margin-bottom: 24px;
+            }
+
+            .proCardBody {
+                display: flex;
+                justify-content: space-between;
+                line-height: 36px;
+            }
+
+            .proColor {
+                display: flex;
+
+                .proColorImg {
+                    width: 24px;
+                    height: 24px;
+                    margin-right: 8px;
+                }
+
+                .purple {
+                    background-color: #5F3E2D;
+                    border-radius: 4px;
+                }
+
+                .coffee {
+                    background-color: #B75929;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+}

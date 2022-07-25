@@ -1,0 +1,41 @@
+.problem {
+
+    @include pad {
+        padding-top: 80px;
+
+        .container {
+            padding: 0 36px;
+        }
+    }
+
+    @include mobile {
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        .container {
+            padding: 0 14px 0 13px;
+        }
+    }
+
+    h3 {
+        padding-left: 16px;
+        border-left: 8px solid #9F1213;
+
+        @include mobile {
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+    }
+
+    .problemList {
+        @include mobile {
+            padding-bottom: 0;
+        }
+
+        li {
+            @include mobile {
+                padding-bottom: 24px;
+            }
+        }
+    }
+}

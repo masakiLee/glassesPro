@@ -1,0 +1,109 @@
+.office {
+
+    @include pad {
+        padding: 80px 0;
+
+        .container {
+            padding: 0 36px;
+        }
+    }
+
+    @include mobile {
+        padding: 40px 0 64px;
+
+        .container {
+            padding: 0 14px 0 13px;
+        }
+    }
+
+    .placePage {
+        display: flex;
+        margin-right: -12px;
+        margin-left: -12px;
+        color: #212529;
+
+        @include pad {
+            flex-direction: column;
+        }
+
+        @include mobile {
+            margin-top: 24px;
+        }
+
+        .placePageCard {
+            padding: 0 12px;
+            margin-bottom: 48px;
+            width: 41%;
+
+            @include pad {
+                display: flex;
+                width: 100%;
+                margin-bottom: 24px;
+            }
+
+            @include mobile {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .placeImg {
+                @include pad {
+                    width: 50%;
+                    padding-right: 12px;
+                }
+
+                @include mobile {
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+
+            .placeBody {
+                @include pad {
+                    width: 50%;
+                    padding-left: 12px;
+                }
+
+                @include mobile {
+                    width: 100%;
+                    padding: 0;
+                }
+
+                .officeName {
+                    padding: 7px 0 7px 23px;
+                    border: 1px solid #00000020;
+                }
+
+                .placeInfo {
+                    border: 1px solid #00000020;
+                    padding: 16px 24px 16px 56px;
+
+                    li {
+                        font-size: 20px;
+                        text-indent: -1em;
+
+                        .icons {
+                            vertical-align: middle;
+                            width: 18px;
+                            text-indent: -11px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .maps {
+        width: 59%;
+        padding: 0 12px;
+
+        .mapsImg {
+            background: url(/imges/maps.png) no-repeat center;
+            background-size: cover;
+        }
+
+        @include pad {
+            width: 100%;
+        }
+    }
+}

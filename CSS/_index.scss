@@ -1,0 +1,446 @@
+.banner {
+    height: 787px;
+    background: url(../upload/home-header.png) no-repeat center center;
+    background-size: cover;
+
+    @include pad {
+        background: url(../upload/home-header-sm.png) no-repeat center center;
+        background-size: cover;
+
+        .container {
+            padding: 0 36px;
+        }
+    }
+
+    @include mobile {
+        height: 396px;
+        background: url(../upload/home-header-sm.png) no-repeat center center;
+        background-size: cover;
+
+        .container {
+            padding: 0 14px 0 13px;
+        }
+    }
+
+    .slogan {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+
+        p {
+            font-size: 36px;
+
+            @include mobile {
+                font-size: 16px;
+            }
+        }
+
+        h2 {
+            font-size: 65px;
+            font-weight: 900;
+
+            @include mobile {
+                font-size: 24px;
+            }
+        }
+
+        a {
+            padding: 6px 12px;
+            background-color: #AA0601;
+            color: white;
+            font-size: 20px;
+            font-weight: 500;
+            font-family: 'Noto Sans TC', sans-serif;
+
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+    }
+}
+
+
+
+
+.process {
+    background-color: #fbf2f2;
+
+    @include pad {
+        .container {
+            padding: 0 36px;
+        }
+    }
+
+    @include mobile {
+        padding-bottom: 16px;
+
+        .container {
+            padding: 0 14px 0 13px;
+        }
+    }
+
+    h3 {
+        @include mobile {
+            padding-top: 40px;
+            padding-bottom: 24px;
+            font-size: 24px;
+        }
+    }
+
+    .sop {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-right: -12px;
+        margin-left: -12px;
+
+
+
+        .sopBox {
+            text-align: center;
+            width: 25%;
+            padding: 0 12px;
+
+            @include pad {
+                width: 50%;
+            }
+
+            @include mobile {
+                width: 100%;
+                margin-bottom: 24px;
+
+            }
+
+        }
+    }
+}
+
+
+
+.series {
+    @include pad {
+        padding-bottom: 56px;
+
+        .container {
+            padding: 0 36px;
+        }
+    }
+
+    @include mobile {
+        padding-bottom: 40px;
+
+        .container {
+            padding: 0 14px 0 13px;
+        }
+    }
+
+    .title {
+        @include mobile {
+            padding-top: 40px;
+            padding-bottom: 24px;
+            font-size: 24px;
+        }
+    }
+
+    .seriesBox {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-right: -12px;
+        margin-left: -12px;
+
+        .seriesBoxItem {
+            width: 33.33%;
+            padding: 0 12PX;
+
+            @include pad {
+                width: 50%;
+                margin: 0 12px 24px 12px;
+
+            }
+
+            @include mobile {
+                width: 100%;
+                margin: 0;
+            }
+
+            a {
+                display: block;
+            }
+
+
+        }
+    }
+}
+
+.joint {
+    height: 608px;
+    background: url(../upload/index-bg.png) no-repeat center;
+    background-size: cover;
+
+    @include pad {
+        height: 960px;
+        background: url(../upload/index-bg-md.png) no-repeat center;
+        background-size: cover;
+
+        .container {
+            padding: 0 36px;
+        }
+    }
+
+    @include mobile {
+        height: 820px;
+        background: url(../upload/index-bg-sm.png) no-repeat center;
+        background-size: cover;
+
+        .container {
+            padding: 0 14px 0 13px;
+        }
+
+    }
+
+    .title {
+        @include mobile {
+            padding-top: 40px;
+            padding-bottom: 24px;
+            font-size: 24px;
+        }
+    }
+
+    .jointBox {
+        display: flex;
+
+        @include pad {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .jointBoxItem {
+            width: 50%;
+
+            @include pad {
+                margin-bottom: 24px;
+                width: 100%;
+            }
+
+            @include mobile {
+                width: 100%;
+            }
+
+            .jointImgOne {
+                height: 240px;
+                background: url(../upload/home-section4-1.png) no-repeat center;
+                background-size: cover;
+
+                @include mobile {
+                    background: url(../upload/home-section4-1-sm.png) no-repeat center;
+                    background-size: cover;
+                }
+            }
+
+            .jointImgTwo {
+                height: 240px;
+                background: url(../upload/home-section4-2.png) no-repeat center;
+                background-size: cover;
+
+                @include mobile {
+                    background: url(../upload/home-section4-2-sm.png) no-repeat center;
+                    background-size: cover;
+                }
+            }
+
+            h3 {
+                background-color: #fff;
+            }
+        }
+    }
+}
+
+.customer {
+
+    @include pad {
+        padding-bottom: 56px;
+
+        .container {
+            padding: 0 36px;
+        }
+    }
+
+    @include mobile {
+        padding-bottom: 16px;
+
+        .container {
+            padding: 0 14px 0 13px;
+        }
+    }
+
+
+    h3 {
+        @include mobile {
+            padding-top: 40px;
+            padding-bottom: 24px;
+            font-size: 24px;
+        }
+    }
+
+    .message {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-right: -12px;
+        margin-left: -12px;
+
+        .messageBox {
+            width: 25%;
+            padding: 0 12px;
+
+            img {
+                width: 100%;
+            }
+
+            @include pad {
+                width: 50%;
+                margin-bottom: 24px;
+            }
+
+            @include mobile {
+                width: 100%;
+            }
+
+            .text {
+                box-shadow: #00000029 0px 2px 6px 0px;
+                padding: 0 16px;
+
+                p {
+                    font-size: 16px;
+                }
+
+                .space-plus {
+                    @include pad {
+                        padding-bottom: 96px;
+                    }
+                }
+
+                .space-middle {
+                    @include pad {
+                        padding-bottom: 72px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+.contact {
+    background-color: #FBF2F2;
+
+    @include pad {
+        .container {
+            padding: 0 36px;
+        }
+    }
+
+    @include mobile {
+        padding-bottom: 40px;
+
+        .container {
+            padding: 0 14px 0 13px;
+        }
+    }
+
+    .contactUs {
+        width: 49%;
+        margin: 0 auto;
+        // padding: 0 12px;
+
+        @include pad {
+            width: 83%;
+        }
+
+        @include mobile {
+            width: 100%;
+        }
+
+        h3 {
+            @include pad {
+                padding-bottom: 24px;
+            }
+
+            @include mobile {
+                padding-top: 40px;
+                font-size: 24px;
+            }
+        }
+
+
+        .text {
+            font-size: 20px;
+
+            @include pad {
+                font-size: 16px;
+
+            }
+        }
+
+        form {
+            font-size: 16px;
+
+            .text {
+                width: 100%;
+                background-color: #FBF2F2;
+                color: #ccc;
+                padding: 6px 0 6px 12px;
+                border: 1px solid #000000;
+                font-size: 16px;
+            }
+
+            textarea {
+                width: 100%;
+                height: 136px;
+                resize: none;
+                background-color: #FBF2F2;
+                border: 1px solid #000000;
+                color: #ccc;
+                font-size: 16px;
+                padding: 6px 0 0 12px;
+            }
+
+            .checkbox {
+                width: 24px;
+                height: 24px;
+                margin: 0 4px;
+                vertical-align: bottom;
+            }
+
+            .submit {
+                display: block;
+                background-color: #AA0601;
+                font-size: 16px;
+                padding: 16px 176px;
+                color: #fff;
+                border: none;
+                margin: 48px auto 0;
+
+                @include pad {
+                    padding: 16px 136px;
+                }
+
+                @include mobile {
+                    padding: 16px 142px;
+                    margin: 24px auto 0;
+                }
+
+                &:hover {
+                    background-color: #650300;
+                }
+            }
+        }
+    }
+}
